@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caldera Crown</title>
+  <link rel="icon" href="assets/icon.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cabinet">
+    <header id="hud" hidden>
+      <div class="hud-brand">
+        <img src="assets/icon.jpg" alt="" width="48" height="48">
+        <div>
+          <p class="kicker">Round <span id="hud-round">1</span></p>
+          <p id="hud-time">2:00</p>
+        </div>
+      </div>
+      <ol id="hud-scores"></ol>
+      <div class="hud-meta">
+        <div id="hud-lava" aria-label="Lava level">
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <p id="hud-hint">Esc pause · M mute</p>
+      </div>
+    </header>
+    <div id="arena">
+      <canvas id="game" width="760" height="760" aria-label="Volcano arena"></canvas>
+      <div id="screen"></div>
+    </div>
+  </div>
+  <p id="live" class="sr-only" aria-live="polite"></p>
+  <div id="probe" hidden></div>
+  <script type="module" src="src/ui/main.js"></script>
+</body>
+</html>
